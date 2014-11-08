@@ -4,6 +4,8 @@ var (
 	// Both BigEndian and LittleEndian implement interface Endian
 	BigEndian    bigEndian
 	LittleEndian littleEndian
+	_ Endian = BigEndian
+	_ Endian = LittleEndian
 )
 
 type Endian interface {

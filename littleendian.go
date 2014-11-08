@@ -9,7 +9,7 @@ func (e littleEndian) Float32(b []byte) float32 {
 	return *(*float32)(unsafe.Pointer(&i))
 }
 
-func (e littleEndian) PutFloat32Bits(f float32) []byte {
+func (e littleEndian) PutFloat32(f float32) []byte {
 	return e.PutUint32(*(*uint32)(unsafe.Pointer(&f)))
 }
 
