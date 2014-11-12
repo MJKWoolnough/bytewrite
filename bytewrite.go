@@ -1,13 +1,15 @@
 package bytewrite
 
 var (
-	// Both BigEndian and LittleEndian implement interface Endian
-	BigEndian    bigEndian
+	// BigEndian implementinterface Endian
+	BigEndian bigEndian
+	// LittleEndian implementinterface Endian
 	LittleEndian littleEndian
-	_ Endian = BigEndian
-	_ Endian = LittleEndian
+	_            Endian = BigEndian
+	_            Endian = LittleEndian
 )
 
+// Endian represents the numerous methds available for easy endian conversion
 type Endian interface {
 	// Takes a slice of bytes and returns a float32 oriented according to the endianness
 	Float32(b []byte) float32
