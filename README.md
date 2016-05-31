@@ -7,8 +7,9 @@
 
 ```go
 var (
-	// Both BigEndian and LittleEndian implement interface Endian
-	BigEndian    bigEndian
+	// BigEndian implementinterface Endian
+	BigEndian bigEndian
+	// LittleEndian implementinterface Endian
 	LittleEndian littleEndian
 )
 ```
@@ -39,3 +40,5 @@ type Endian interface {
 	PutUint64(v uint64) []byte
 }
 ```
+
+Endian represents the numerous methds available for easy endian conversion
