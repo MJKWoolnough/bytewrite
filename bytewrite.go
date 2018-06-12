@@ -1,4 +1,4 @@
-package bytewrite
+package bytewrite // import "vimagination.zapto.org/bytewrite"
 
 var (
 	// BigEndian implementinterface Endian
