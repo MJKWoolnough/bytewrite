@@ -1,6 +1,6 @@
 # bytewrite
 --
-    import "github.com/MJKWoolnough/bytewrite"
+    import "vimagination.zapto.org/bytewrite"
 
 
 ## Usage
