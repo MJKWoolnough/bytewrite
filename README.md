@@ -7,9 +7,9 @@
 
 ```go
 var (
-	// BigEndian implementinterface Endian.
+	// BigEndian implements the Endian interface.
 	BigEndian bigEndian
-	// LittleEndian implementinterface Endian.
+	// LittleEndian implements the Endian interface.
 	LittleEndian littleEndian
 )
 ```
